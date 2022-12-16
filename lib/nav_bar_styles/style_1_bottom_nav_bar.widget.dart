@@ -34,7 +34,7 @@ class BottomNavStyle1 extends StatelessWidget {
                     Flexible(
                       child: Padding(
                         padding: EdgeInsets.only(
-                            right: item.title == null ? 0.0 : 8),
+                            right: item.title == null ? 0.0 : 5.0),
                         child: IconTheme(
                           data: IconThemeData(
                               size: item.iconSize,
@@ -54,6 +54,7 @@ class BottomNavStyle1 extends StatelessWidget {
                     else
                       isSelected
                           ? Flexible(
+                              flex: 2,
                               child: Material(
                                 type: MaterialType.transparency,
                                 child: FittedBox(
